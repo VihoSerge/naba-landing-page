@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naba – Nourris ta foi chaque jour</title>
+  <link rel="shortcut icon" href="./public/assets/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #5b21b6;
+      --secondary: #ede9fe;
+      --text: #1f2937;
+      --bg: #ffffff;
+      --accent: #7c3aed;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: var(--bg);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .btn-download {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--secondary);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .store-buttons {
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+    }
+
+    .store-buttons img {
+      height: 50px;
+      margin: 0.5rem;
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      background-color: var(--bg);
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+
+    .feature {
+      margin-bottom: 2rem;
+    }
+
+    .feature h4 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .screenshots {
+      padding: 2rem;
+      background-color: var(--secondary);
+      text-align: center;
+    }
+
+    .screenshots img {
+      max-width: 200px;
+      margin: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .testimonials {
+      padding: 4rem 2rem;
+      background-color: var(--bg);
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 2rem auto;
+      font-style: italic;
+      border-left: 4px solid var(--primary);
+      padding-left: 1rem;
+    }
+
+    .download-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .download-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background-color: #f3f4f6;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    @media(min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+      }
+
+      .hero div {
+        max-width: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="./public/assets/logo.png" alt="" width="40" height="40" />
+    <a href="#download" class="btn-download">Télécharger l’app</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Nourris ta foi chaque jour</h2>
+      <p>
+        Plonge dans une expérience spirituelle enrichissante avec Naba. Conçue pour les chrétiens en quête de vérité, de guidance et de croissance spirituelle.
+      </p>
+      <div class="store-buttons">
+        <a href="#"><img src="./public/assets/Daco_1147665.png" alt="Play Store" style="width: 150px; height: 59px;"></a>
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+      </div>
+    </div>
+    <img src="./public/assets/preview.png" alt="Naba App" style="border-radius:2rem;  margin-top:2rem; width: 400px;">
+  </section>
+
+  <section class="features">
+    <h3>Fonctionnalités clés</h3>
+    <div class="feature">
+      <h4>📖 Connecté à la Parole</h4>
+      <p>Accède à des ressources édifiantes : enseignements, méditations, messages d’encouragement.</p>
+    </div>
+    <div class="feature">
+      <h4>🎥 Vidéos en direct & replay</h4>
+      <p>Prédications, témoignages, louanges et plus, partout et à tout moment.</p>
+    </div>
+    <div class="feature">
+      <h4>🛐 Vie chrétienne au quotidien</h4>
+      <p>Thèmes spirituels pour prier, louer, et grandir avec Dieu.</p>
+    </div>
+  </section>
+
+  <section class="screenshots">
+    <h3>Aperçu de l'application</h3>
+    <img src="./public/assets/screen-1.png" alt="Screenshot 1" />
+    <img src="./public/assets/screen-2.png" alt="Screenshot 2" />
+    <img src="./public/assets/screen-3.png" alt="Screenshot 3" />
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonial">
+      <p>“Naba m’aide à rester alignée avec Dieu, même dans les moments de doute.” – Sarah, 24 ans</p>
+    </div>
+    <div class="testimonial">
+      <p>“J’écoute les replays tous les matins, un vrai boost spirituel.” – Marc, 31 ans</p>
+    </div>
+  </section>
+
+  <section class="download-section" id="download">
+    <h3>Commence ton cheminement spirituel dès aujourd'hui</h3>
+    <p>Télécharge l'app et marche avec foi, jour après jour.</p>
+    <div class="store-buttons" style="margin-top: 1rem; justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=com.jeunesseciel.generationchoisieapp"><img src="./public/assets/Daco_1147665.png" alt="Play Store" style="width: 150px; height: 59px;"></a>
+      <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Naba. Tous droits réservés – Église Ciel | contact@naba.app
+  </footer>
+
+</body>
+</html>
